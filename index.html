@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VICE CITY SKYDROP — Open City Drone Run</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="shell">
+<header class="top"><div class="brand"><div class="mark">✦</div><div><div class="eyebrow">VICE CITY // AIR COURIER NETWORK</div><h1>VICE CITY <span>SKYDROP</span></h1></div></div><div class="tag">SUNSET BOULEVARD // FREE ROAM DELIVERY</div></header>
+<section class="stats">
+<div class="stat"><label>CASH EARNED</label><b id="score">00000</b><div class="sub" id="best">PERSONAL BEST 00000</div></div>
+<div class="stat"><label>MISSION CLOCK</label><b id="time">90.0s</b><div class="sub">NIGHT SHIFT COUNTDOWN</div></div>
+<div class="stat"><label>CARGO STATUS</label><b id="cargo">EMPTY</b><div class="sub" id="cargoSub">SEARCH FOR A BEACON</div></div>
+<div class="stat"><label>DRONE CONDITION</label><b id="health">♥ ♥ ♥</b><div class="sub">3 IMPACT CHARGES</div></div>
+<div class="stat"><label>DELIVERY RUN</label><b id="streak">×0</b><div class="sub" id="deliveries">0 COMPLETED</div></div>
+</section>
+<main class="gamebox"><canvas id="game" width="1600" height="900"></canvas><div class="scan"></div><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="overlay" id="overlay"><div class="dialog"><div class="symbol">🚁</div><div class="eyebrow">VICE CITY AIR // CONTRACT 001</div><h2>WELCOME TO <span>VICE CITY</span></h2><p>The city never sleeps. Pilot your courier drone across the waterfront skyline, collect priority cargo and deliver it to rooftop drop zones before the contract clock runs out. Earn cash, build your delivery streak and keep your drone in one piece.</p><div class="actions"><button class="primary" id="start">▶ START NIGHT SHIFT</button><button class="secondary" id="how">MISSION GUIDE</button></div><div class="micro">WASD / ARROWS MOVE · SPACE PICK UP / DROP · SHIFT BOOST · P PAUSE</div></div></div></main>
+<div class="tipbar"><div id="objective">MISSION: <strong>COMPLETE 5 DELIVERIES</strong></div><div class="keys">MOVE <kbd>WASD</kbd> ACTION <kbd>SPACE</kbd> BOOST <kbd>SHIFT</kbd> PAUSE <kbd>P</kbd></div></div>
+<div class="mobile"><div class="pad"><button class="up" data-key="ArrowUp">▲</button><button class="left" data-key="ArrowLeft">◀</button><button class="down" data-key="ArrowDown">▼</button><button class="right" data-key="ArrowRight">▶</button></div><button class="mact" id="mAction">PICK UP<br>/ DROP</button><button class="mact" id="mBoost">BOOST ⚡</button></div>
+<section class="bottom"><div class="panel"><small>FLIGHT CONTROL / SYSTEM MESSAGE</small><b id="status">SYSTEM READY — AWAITING PILOT</b><p id="hint">Fly toward the pink cargo beacon. Get close and press SPACE to collect it.</p></div><div class="panel"><small>ACTIVE DISTRICT</small><b>VICE CITY WATERFRONT</b><p>Oceanfront avenues · Neon skyline · Downtown traffic</p></div><div class="panel"><small>DELIVERY LOG</small><b id="log">0 / 5 PACKAGES</b><p>Keep your drone intact and beat the clock.</p></div></section>
+</div>
+<script src="script.js"></script></body></html>
